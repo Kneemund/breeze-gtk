@@ -1,19 +1,12 @@
-# Gnome-breeze
+# Breeze GTK Monochrome
 
-A GTK Theme Built to Match KDE's Breeze. GTK2 theme made by [scionicspectre](https://github.com/scionicspectre/BreezyGTK)
+A custom version of the [Breeze GTK theme](https://github.com/KDE/breeze-gtk) for the [Monochrome KDE Plasma theme](https://github.com/pwyde/monochrome-kde). \
+The current version replaces the original close/minimize/maximize icons with the ones from Monochrome.
 
-# Requirements
+## Installation
 
-- GTK+ 3.16
-- Pixmap/Pixbuf theme engine for GTK 2
-
-# Install instructions
-If your distribution doesn't provide a package, you can install the theme system-wide by copying it to the appropriate directory, usually "/usr/share/themes".
+Clone this repository and enter the following commands:
+```sh
+$ cd breeze-gtk/src/
+$ sudo ./build_theme.sh -c Monochrome -t /usr/share/themes/Monochrome
 ```
-find Breeze* -type f -exec install -Dm644 '{}' "$pkgdir/usr/share/themes/{}" \;
-```
-
-To install only for the current user, copy the files to "~/.themes".
-
-To set the theme in Plasma 5, install kde-gtk-config and use System Settings > Application Style > GNOME Application Style.
-Also make sure to disable "apply colors to non-Qt applications" in System Settings > Colors > Options.
