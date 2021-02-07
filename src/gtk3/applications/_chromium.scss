@@ -105,36 +105,5 @@ window.background.chromium {
         }
       }
     }
-
-    @at-root window.background.chromium.maximized headerbar,
-      .maximized .titlebar {
-      button.titlebutton {
-        &.maximize {
-          color: transparent;
-          background-image: -gtk-scaled(
-            url("../assets/titlebutton-maximize-maximized.png"),
-            url("../assets/titlebutton-maximize-maximized@2.png")
-          );
-          &:hover {
-            background-image: -gtk-scaled(
-              url("../assets/titlebutton-maximize-maximized-hover.png"),
-              url("../assets/titlebutton-maximize-maximized-hover@2.png")
-            );
-          }
-          &:active {
-            background-image: -gtk-scaled(
-              url("../assets/titlebutton-maximize-maximized-active.png"),
-              url("../assets/titlebutton-maximize-maximized-active@2.png")
-            );
-          }
-          &:backdrop {
-            background-image: -gtk-scaled(
-              url("../assets/titlebutton-maximize-maximized-backdrop.png"),
-              url("../assets/titlebutton-maximize-maximized-backdrop@2.png")
-            );
-          }
-        }
-      }
-    }
   }
 }

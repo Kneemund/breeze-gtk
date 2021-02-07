@@ -85,142 +85,75 @@ window {
       }
 
       &.close {
-        padding: 1px;
+        padding: 2px;
         border-image: none;
+        border-radius: 50%;
         box-shadow: none;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: $titlebutton-size;
-        background-image: -gtk-recolor(
-          url("../assets/breeze-close-symbolic.svg"),
-          color gtk("@theme_text_color")
-        );
-        -gtk-icon-source: none;
+        background-image: url("../assets/close.svg");
       }
       &.close:hover {
         border-color: transparent;
-        background-color: transparent;
-        background-image: -gtk-recolor(
-          url("../assets/breeze-close-hover-symbolic.svg")
-        );
+        background-color: #7C3139;
       }
       &.close:active {
         border-color: transparent;
-        background-color: transparent;
-        background-image: -gtk-recolor(
-          url("../assets/breeze-close-active-symbolic.svg")
-        );
+        background-color: #B43C49;
       }
       &.close:backdrop {
         border-color: transparent;
         background-color: transparent;
-        background-image: -gtk-recolor(
-          url("../assets/breeze-close-symbolic.svg")
-        );
+        background-image: url("../assets/close.svg");
+        opacity: 0.5;
       }
 
       &.maximize {
-        padding: 1px;
+        padding: 2px;
         border-image: none;
+        border-radius: 50%;
         box-shadow: none;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: $titlebutton-size;
-        background-image: -gtk-recolor(
-          url("../assets/breeze-maximize-symbolic.svg")
-        );
+        background-image: url("../assets/maximize.svg");
       }
       &.maximize:hover {
         border-color: transparent;
-        background-color: transparent;
-        background-size: contain;
-        background-image: -gtk-recolor(
-          url("../assets/breeze-maximize-hover-symbolic.svg")
-        );
+        background-color: #464648;
       }
       &.maximize:active {
         border-color: transparent;
-        background-color: transparent;
-        background-image: -gtk-recolor(
-          url("../assets/breeze-maximize-active-symbolic.svg")
-        );
+        background-color: #5D5D5E;
       }
       &.maximize:backdrop {
         border-color: transparent;
         background-color: transparent;
-        background-image: -gtk-recolor(
-          url("../assets/breeze-maximize-symbolic.svg")
-        );
+        background-image: url("../assets/maximize.svg");
+        opacity: 0.5;
       }
 
       &.minimize {
-        padding: 1px;
+        padding: 2px;
         border-image: none;
+        border-radius: 50%;
         box-shadow: none;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: $titlebutton-size;
-        background-image: -gtk-recolor(
-          url("../assets/breeze-minimize-symbolic.svg")
-        );
+        background-image: url("../assets/minimize.svg");
       }
       &.minimize:hover {
         border-color: transparent;
-        background-color: transparent;
-        background-image: -gtk-recolor(
-          url("../assets/breeze-minimize-hover-symbolic.svg")
-        );
+        background-color: #464648;
       }
       &.minimize:active {
         border-color: transparent;
-        background-color: transparent;
-        background-image: -gtk-recolor(
-          url("../assets/breeze-minimize-active-symbolic.svg")
-        );
+        background-color: #5D5D5E;
       }
       &.minimize:backdrop {
         border-color: transparent;
         background-color: transparent;
-        background-image: -gtk-recolor(
-          url("../assets/breeze-minimize-symbolic.svg")
-        );
-      }
-    }
-
-    .maximized & {
-      button.titlebutton {
-        &.maximize {
-          padding: 1px;
-          border-image: none;
-          box-shadow: none;
-          background-position: center;
-          background-size: $titlebutton-size;
-          background-repeat: no-repeat;
-          background-image: -gtk-recolor(
-            url("../assets/breeze-maximized-symbolic.svg")
-          );
-        }
-        &.maximize:hover {
-          border-color: transparent;
-          background-color: transparent;
-          background-image: -gtk-recolor(
-            url("../assets/breeze-maximized-hover-symbolic.svg")
-          );
-        }
-        &.maximize:active {
-          border-color: transparent;
-          background-color: transparent;
-          background-image: -gtk-recolor(
-            url("../assets/breeze-maximized-active-symbolic.svg")
-          );
-        }
-        &.maximize:backdrop {
-          border-color: transparent;
-          background-color: transparent;
-          background-image: -gtk-recolor(
-            url("../assets/breeze-maximized-symbolic.svg")
-          );
-        }
+        background-image: url("../assets/minimize.svg");
+        opacity: 0.5;
       }
     }
   }
