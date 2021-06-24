@@ -153,11 +153,11 @@ notebook {
       padding-right: 4px;
 
       &.down {
-        -gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
+        -gtk-icon-source: -gtk-icontheme($arrow_left);
       }
 
       &.up {
-        -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+        -gtk-icon-source: -gtk-icontheme($arrow_right);
       }
     }
 
@@ -180,11 +180,11 @@ notebook {
       padding-bottom: 4px;
 
       &.down {
-        -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
+        -gtk-icon-source: -gtk-icontheme($arrow_up);
       }
 
       &.up {
-        -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+        -gtk-icon-source: -gtk-icontheme($arrow_down);
       }
     }
 
